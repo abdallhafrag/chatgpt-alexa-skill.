@@ -6,8 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const OPENAI_API_KEY = "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"; // ضع هنا مفتاح API من OpenAI
-
+const OPENAI_API_KEY = "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",
 app.post("/chat", async (req, res) => {
     try {
         const userMessage = req.body.message;
